@@ -99,7 +99,7 @@ nav ul {
 /* banner */
 .banner {
     height: min(100vh, 800px);
-    background-image: url("./images/banner-bookworm.jpg");
+    background-image: url("banner-bookworm.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
