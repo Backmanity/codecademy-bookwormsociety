@@ -1,82 +1,25 @@
 *,
-*::after,
-*::before {
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
+/*global styles*/
 body {
-    background-color: lightskyblue;
-    font-size: 16px;
-    text-align: center;
+    background-color: #1A1F36;
+    color: #FFFFFF;
     margin: 0;
+    padding-top: 2rem;
 }
 
-/* nav bar */
-#primary-menu {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: lightskyblue;
-    top: 0;
-    border-bottom: rgb(77, 72, 69) solid 1px;
-    position: fixed;
-    box-shadow: 0 5px 3px rgba(77, 72, 69, 0.2);
-    z-index: 5;
-}
-
-#primary-menu a {
-    text-decoration: none;
-    font-size: .95rem;
-}
-
-#logo {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    padding-left: 0.75rem;
-}
-
-#menu {
-    padding-right: 2rem;
-    display: flex;
-    gap: 0.5rem;
-}
-
-/* main banner */
-#main-container {
-    padding-top: 3rem;
-    width: 100%;
-    margin-bottom: 2rem;
-}
-
-#main-banner {
-    width: 100%;
-    height: 65vh;
-    background-image: url("https://github.com/Backmanity/codecademy-bookwormsociety/blob/85206d26bf2280ba4f03950c5143bdddab18518a/banner-bookworm.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#main-cta {
-    display: inline-block;
-    margin-top: 10rem;
-    padding: 1rem 2rem;
-    background-color: lightgrey;
-}
-
-/* mission */
-.text-box {
-    width: 70%;
-    text-align: center;
-    margin-inline: auto;
-}
-
-/* containers and cards */
 .container {
-    width: 90%;
-    margin: 0 auto 3rem auto;
+    margin: 0 auto;
+    background-color: #3d445c;
+    padding: 0.5rem 2rem 1.5rem 2rem;
+    margin: 2rem 1rem;
+}
+
+.flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -84,28 +27,131 @@ body {
 }
 
 .card {
-    background-color: lightgrey;
-    max-width: 550px;
+    flex-basis: 100%;
     min-width: 300px;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
+    max-width: 350px;
+    padding: 0.5rem 2rem;
+    background-color: #717890;
 }
 
-.card > img {
-    width: min(100%, 400px);
-    height: auto;
+/*images and icons*/
+img {
+    width: 100%;
+    max-height: 400px;
     object-fit: cover;
+    object-position: center;
+}
+
+.icon {
+    width: 20%;
+    object-fit: contain;
+}
+
+/*p {
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    line-height: 1.4;
+}*/
+
+.bkgrnd-accent {
+    background-color: #F4D35E;
+}
+
+.txt-accent {
+    color: #FFAA00;
+}
+
+/* navbar*/
+nav {
+    width: 100%;
+    top: 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    background-color: #1A1F36;
+    border-bottom: rgb(77, 72, 69) solid 1px;
+    box-shadow: 0 5px 3px rgba(77, 72, 69, 0.2);
+    z-index: 5;
+}
+
+nav > * {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+  }
+  
+nav a:active {
+    text-decoration: underline;
+  }
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+}
+
+/* banner */
+.banner {
+    height: min(100vh, 800px);
+    background-image: url("./images/banner-bookworm.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cta-box {
+    display: inline-block;
+    margin-top: 55vh;
+    margin-left: 5vw;
+    margin-right: 3vw;
+    background-color: #3d445c;
+    padding: 0.5rem 2rem;
+}
+
+/* quote */
+.txt-margin {
+    margin: 2rem 2rem;
+}
+
+/* benefits */
+.flex-card {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+}
+
+.flex-card > p {
+    text-align: center;
 }
 
 /* footer */
-footer {
+.footer-flex {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    height: 3rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    border-top: black solid 2px;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+}
+
+form > p {
+    margin: 0 0;
+}
+
+.footer-icons {
+    width: 2rem;
+    max-width: 30px;
+    background-color: #FFAA00;
+    border-radius: 100%;
+}
+
+.footer-links {
+    text-decoration: none;
 }
