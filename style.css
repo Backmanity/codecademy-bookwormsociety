@@ -1,0 +1,111 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightskyblue;
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+}
+
+/* nav bar */
+#primary-menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lightskyblue;
+    top: 0;
+    border-bottom: rgb(77, 72, 69) solid 1px;
+    position: fixed;
+    box-shadow: 0 5px 3px rgba(77, 72, 69, 0.2);
+    z-index: 5;
+}
+
+#primary-menu a {
+    text-decoration: none;
+    font-size: .95rem;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding-left: 0.75rem;
+}
+
+#menu {
+    padding-right: 2rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* main banner */
+#main-container {
+    padding-top: 3rem;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+#main-banner {
+    width: 100%;
+    height: 65vh;
+    background-image: url("./images/main-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#main-cta {
+    display: inline-block;
+    margin-top: 10rem;
+    padding: 1rem 2rem;
+    background-color: lightgrey;
+}
+
+/* mission */
+.text-box {
+    width: 70%;
+    text-align: center;
+    margin-inline: auto;
+}
+
+/* containers and cards */
+.container {
+    width: 90%;
+    margin: 0 auto 3rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card {
+    background-color: lightgrey;
+    max-width: 550px;
+    min-width: 300px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.card > img {
+    width: min(100%, 400px);
+    height: auto;
+    object-fit: cover;
+}
+
+/* footer */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-top: black solid 2px;
+}
