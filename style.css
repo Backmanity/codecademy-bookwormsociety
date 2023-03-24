@@ -53,7 +53,7 @@ body {
 #main-banner {
     width: 100%;
     height: 65vh;
-    background-image: url("./images/main-banner.jpg");
+    background-image: url("https://github.com/Backmanity/codecademy-bookwormsociety/blob/85206d26bf2280ba4f03950c5143bdddab18518a/banner-bookworm.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
