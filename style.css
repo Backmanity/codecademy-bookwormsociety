@@ -67,21 +67,15 @@ nav {
     width: 100%;
     top: 0;
     position: fixed;
-    display: flex;
-    justify-content: center;
+    padding: 0 1.5rem;
     background-color: #1A1F36;
     border-bottom: rgb(77, 72, 69) solid 1px;
     box-shadow: 0 5px 3px rgba(77, 72, 69, 0.2);
     z-index: 5;
 }
 
-nav > * {
-    list-style: none;
-}
-
 nav a {
     text-decoration: none;
-    text-align: center;
     font-weight: bold;
 }
 
@@ -95,6 +89,9 @@ nav a:active {
 
 nav ul {
     display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-inline-start: 0;
     gap: 1rem;
 }
 
