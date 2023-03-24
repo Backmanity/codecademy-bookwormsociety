@@ -47,10 +47,12 @@ img {
     object-fit: contain;
 }
 
-/*p {
-    font-size: clamp(1rem, 1.5vw, 1.5rem);
-    line-height: 1.4;
-}*/
+.btn {
+    background-color: #1A1F36;
+    color: #F4D35E;
+    border: 1px solid #FFAA00;
+    border-radius: 10%;
+}
 
 .bkgrnd-accent {
     background-color: #F4D35E;
